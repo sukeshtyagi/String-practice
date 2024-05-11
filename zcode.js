@@ -116,9 +116,7 @@ function countVowel3(strV1) {
   console.log(`No of consonents in give string is ${arV3.length - res3}`);
 }
 
-//array destructuring
-
-function expect(val) {
+/*function expect(val) {
   return {
     toBe: function toBe(val1) {
       if (val === val1) {
@@ -138,3 +136,28 @@ function expect(val) {
 }
 let a = expect(5).notToBe(5);
 console.log(a);
+*/
+
+function createCounter(init) {
+  return {
+    increment: () => {
+      return ++init;
+    },
+    decrement: () => {
+      return --init;
+    },
+    reset: () => {
+      init = 0;
+      return init;
+    },
+  };
+}
+let a = createCounter(4);
+console.log(a.decrement());
+console.log(a.reset());
+console.log(a.decrement());
+console.log(a.decrement());
+console.log(a.decrement());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.decrement());
