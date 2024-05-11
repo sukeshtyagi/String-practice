@@ -116,61 +116,18 @@ function countVowel3(strV1) {
   console.log(`No of consonents in give string is ${arV3.length - res3}`);
 }
 
-/*function expect(val) {
-  return {
-    toBe: function toBe(val1) {
-      if (val === val1) {
-        return true;
-      } else {
-        throw new Error("not equal");
-      }
-    },
-    notToBe: function notToBe(val2) {
-      if (val !== val2) {
-        return true;
-      } else {
-        throw new Error("equal");
-      }
-    },
-  };
-}
-let a = expect(5).notToBe(5);
-console.log(a);
-*/
+//Capitalize First Letter
 
-/*function createCounter(init) {
-  var initial = init;
-  return {
-    increment: () => {
-      return ++init;
-    },
-    decrement: () => {
-      return --init;
-    },
-    reset: () => {
-      init = initial;
-      return init;
-    },
-  };
-}
-let a = createCounter(4);
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.increment());
-console.log(a.reset());
-console.log(a.decrement());
-*/
+let str4 = "hi i m from bharat";
+const ar4 = str4.split(" ");
+console.log(ar4);
+//let res4 = ar4.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
 
-const arr = [0, 1, 2, 3, 4, 5, 6];
-let a = [];
-for (i = 0; i < arr.length; i++) {
-  a.push(arr[i] + 100);
-}
-console.log(a);
+//let res4 = [];
+//ar4.forEach((element) => {
+//  res4.push(element.charAt(0) + element.substring(1));
+//});
+//console.log(res4.join(" "));
+
+str4 = str4.replace(/\b\w/g, (char) => char.toUpperCase());
+console.log(str4);
