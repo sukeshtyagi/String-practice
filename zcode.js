@@ -118,9 +118,9 @@ function countVowel3(strV1) {
 
 //Capitalize First Letter
 
-let str4 = "hi i m from bharat";
-const ar4 = str4.split(" ");
-console.log(ar4);
+//let str4 = "hi i m from bharat";
+//const ar4 = str4.split(" ");
+//console.log(ar4);
 //let res4 = ar4.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
 
 //let res4 = [];
@@ -128,6 +128,15 @@ console.log(ar4);
 //  res4.push(element.charAt(0) + element.substring(1));
 //});
 //console.log(res4.join(" "));
+//str4 = str4.replace(/\b\w/g, (char) => char.toUpperCase());
+//console.log(str4);
 
-str4 = str4.replace(/\b\w/g, (char) => char.toUpperCase());
-console.log(str4);
+//code snippet on regular method
+
+const stra = "hello world hello";
+const newStr = stra.replace("hello", "hi");
+//console.log(newStr);
+
+const str1 = "hello world hello";
+const newStr11 = str1.replace(/hello/, "hi");
+console.log(newStr11);
