@@ -139,6 +139,7 @@ console.log(a);
 */
 
 function createCounter(init) {
+  var initial = init;
   return {
     increment: () => {
       return ++init;
@@ -147,17 +148,21 @@ function createCounter(init) {
       return --init;
     },
     reset: () => {
-      init = 0;
+      init = initial;
       return init;
     },
   };
 }
 let a = createCounter(4);
-console.log(a.decrement());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
+console.log(a.increment());
 console.log(a.reset());
-console.log(a.decrement());
-console.log(a.decrement());
-console.log(a.decrement());
-console.log(a.increment());
-console.log(a.increment());
 console.log(a.decrement());
