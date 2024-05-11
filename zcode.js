@@ -138,7 +138,7 @@ let a = expect(5).notToBe(5);
 console.log(a);
 */
 
-function createCounter(init) {
+/*function createCounter(init) {
   var initial = init;
   return {
     increment: () => {
@@ -166,3 +166,11 @@ console.log(a.increment());
 console.log(a.increment());
 console.log(a.reset());
 console.log(a.decrement());
+*/
+
+const arr = [0, 1, 2, 3, 4, 5, 6];
+let a = [];
+for (i = 0; i < arr.length; i++) {
+  a.push(arr[i] + 100);
+}
+console.log(a);
